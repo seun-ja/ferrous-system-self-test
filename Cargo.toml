@@ -1,0 +1,11 @@
+[package]
+name = "ferrous_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "^1.36", features = ["fs", "macros", "rt-multi-thread"] }
+anyhow = { version = "^1.0", features = ["backtrace"] }
+clap = { version = "4.0.0", features = ["derive"] }
